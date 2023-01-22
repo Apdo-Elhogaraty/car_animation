@@ -1,0 +1,47 @@
+.car{
+    height: 100px;
+    width: 200px;
+    background-image: url(./download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.car_1,.car_3,.car_5{
+    animation-name: car_ltr;
+    animation-duration: 2s;
+    
+}
+.car_2,.car_4,.car_6{
+    transform: rotateY(180deg);
+    float: right;
+    animation-name: car_rtl;
+    animation-duration: 2s;
+}
+.clear{
+    clear: both;
+}
+.car_2{
+    animation-delay: 3s;
+}
+.car_3{
+    animation-delay: 5s;
+}
+.car_4{
+    animation-delay: 7s;
+}
+.car_5{
+    animation-delay: 9s;
+}
+.car_6{
+    animation-delay: 11s;
+}
+@keyframes car_ltr{
+    from{left: 4px;}
+    to{left: 85%;}
+}
+@keyframes car_rtl{
+    from{right: 4px;}
+    to{right: 85%;}
+}
